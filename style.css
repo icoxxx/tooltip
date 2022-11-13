@@ -1,0 +1,82 @@
+#outer{
+    position: relative;
+    display: inline-block;
+    margin: 70px 70px 70px 70px;
+}
+
+.buttons{
+    height: 150px;
+}
+
+
+#inner{
+    width: 150px;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px 3px;
+    border-radius: 6px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: 105%;
+    left: -50%;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+#outer:hover #inner{
+    position: absolute;
+    visibility: visible;
+}
+
+#outer2{
+    position: relative;
+    display: inline-block;
+    margin: 70px 70px 70px 70px;
+}
+
+#inner2{
+    width: 150px;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px 3px;
+    border-radius: 6px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 105%;
+    left: -25%;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+#outer2:hover #inner2{
+    position: absolute;
+    visibility: visible;
+}
+
+
+.inner{
+    width: 150px;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px 3px;
+    border-radius: 6px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+.outer{
+    position: relative;
+    display: inline-block;
+    left: 70px;
+}
+
+.outer:hover .inner{
+    position: sticky;
+    visibility: visible;
+    margin: auto;
+}
